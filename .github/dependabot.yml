@@ -12,3 +12,15 @@ updates:
     labels:
       - "dependencies"
     open-pull-requests-limit: 5
+
+  - package-ecosystem: "cargo"
+    directory: "/api"
+    schedule:
+      interval: "daily"
+    groups:
+      cargo-minor-and-patch:
+        update-types:
+          - "minor"
+          - "patch"
+    labels:
+      - "dependencies"
