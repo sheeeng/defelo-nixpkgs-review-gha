@@ -5,13 +5,8 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    groups:
-      github-actions:
-        patterns:
-          - "*"
     labels:
       - "dependencies"
-    open-pull-requests-limit: 5
 
   - package-ecosystem: "cargo"
     directory: "/api"
