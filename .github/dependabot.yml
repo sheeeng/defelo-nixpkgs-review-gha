@@ -19,3 +19,14 @@ updates:
           - "patch"
     labels:
       - "dependencies"
+
+  - package-ecosystem: "nix"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    groups:
+      nix:
+        patterns:
+          - "*"
+    labels:
+      - "dependencies"
